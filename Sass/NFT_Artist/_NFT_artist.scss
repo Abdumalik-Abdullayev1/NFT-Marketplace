@@ -1,0 +1,69 @@
+.nft_artist{
+    &_title{
+        color: #fff;
+        font-size: 22px;
+        padding: 20px 0;
+        text-align: center;
+    }
+    &_cards{
+        display: grid;
+        gap: 20px;
+        &_card{
+            width: 100%;
+            background-color: rgba(59, 59, 59, 1);
+            border-radius: 20px;
+            &:nth-child(3),&:nth-child(4),&:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8),&:nth-child(9){
+                display: none;
+            }
+            &_img{
+                width: 100%;
+            }
+            &_title{
+                color: #fff;
+                display: grid;
+                gap: 15px;
+                padding: 20px;
+            }
+        }
+        &_card_info{
+            color: rgba(133, 133, 132, 1);
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        &_card_rank{
+            color: #fff;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+    }
+}
+@media (min-width: 786px){
+    .nft_artist{
+        &_cards{
+            display: grid;
+            grid-template-columns: auto auto;
+            &_card{
+                &:nth-child(3),&:nth-child(4),&:nth-child(5),&:nth-child(6){
+                    display: block;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px){
+    .nft_artist{
+        &_cards{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            &_card{
+                &:nth-child(7),&:nth-child(8),&:nth-child(9){
+                    display: block;
+                }
+            }
+        }
+    }
+}

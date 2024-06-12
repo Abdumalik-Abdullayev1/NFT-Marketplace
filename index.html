@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Responsive Web App</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="./index.html"><img class="nav_logo" src="./pic/HomePage_pic/logo.svg" alt="Logo"></a>
+            <div class="nav_links">
+                <ul class="nav_lists">
+                    <li class="list_items">
+                        <a class="list_link" href="./HTML/ArtistPage.html">Artist</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="./HTML/Marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="./HTML/NFT_Artist.html">NFT Page</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="#">Connect a wallet</a>
+                    </li>
+                    <a href="./HTML/AccountPage.html"><button class="nav_items_auth"><i class="fa-solid fa-user" style="color: #ffffff;"></i><span>Sign Up</span></button></a>    
+                </ul>
+            </div>
+            <button id="nav_burger" onclick="btn()">
+                <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero_mobile">
+                <h1 class="hero_mobile-title">Discover digital art & Collect NFTs</h1>
+                <p class="hero_mobile-desc">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art
+                    from more than 20k NFT artists.</p>
+                <div class="hero_card">
+                    <img class="hero_card-img" src="./pic/HomePage_pic/space-img.svg">
+                    <div class="hero_card-desc">
+                        <h2>Space Walking</h2>
+                        <div class="hero_info">
+                            <img src="./pic/HomePage_pic/hero_avatar.svg">
+                            <p>Animakid</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="hero_mobile-btn">
+                    <img src="./pic/RocketLaunch.svg">
+                    <span>Get Started</span>
+                </button>
+                <div class="hero_statistic">
+                    <div class="hero_statistic-item">
+                        <h1 class="hero_statistic-title">240k+</h1>
+                        <p class="hero_statistic-text">Total Sale</p>
+                    </div>
+                    <div class="hero_statistic-item">
+                        <h1 class="hero_statistic-title">100k+</h1>
+                        <p class="hero_statistic-text">Auctions</p>
+                    </div>
+                    <div class="hero_statistic-item">
+                        <h1 class="hero_statistic-title">240k+</h1>
+                        <p class="hero_statistic-text">Artists</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero_tablet">
+                <div class="hero_tablet_card">
+                    <div class="hero_tablet_left">
+                        <h1>Discover digital art & Collect NFTs</h1>
+                        <p>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k
+                            NFT artists.</p>
+                        <button class="hero_tablet_button">
+                            <img src="./pic/HomePage_pic/RocketLaunch.svg">
+                            <span>Get started</span>
+                        </button>
+                        <div class="hero_statistic">
+                            <div class="hero_statistic-item">
+                                <h1 class="hero_statistic-title">240k+</h1>
+                                <p class="hero_statistic-text">Total Sale</p>
+                            </div>
+                            <div class="hero_statistic-item">
+                                <h1 class="hero_statistic-title">100k+</h1>
+                                <p class="hero_statistic-text">Auctions</p>
+                            </div>
+                            <div class="hero_statistic-item">
+                                <h1 class="hero_statistic-title">240k+</h1>
+                                <p class="hero_statistic-text">Artists</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero_tablet_right_info">
+                        <img src="./pic/HomePage_pic/space-img.svg" alt="Space">
+                        <div class="hero_card-desc">
+                            <h2>Space Walking</h2>
+                            <div class="hero_info">
+                                <img src="./pic/HomePage_pic/hero_avatar.svg">
+                                <p>Animakid</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="collection container">
+            <div class="collection_mobile">
+                <div class="collection_mobile-item">
+                    <h1 class="collection_mobile-title">Trending Collection</h1>
+                    <p class="collection_mobile-desc">Checkout our weekly updated trending collection.</p>
+                </div>
+                <div class="collection_card">
+                    <img class="collection_card_header_img" src="./pic/HomePage_pic/collection-head-img-1card.svg">
+                    <img class="collection_card_images" src="./pic/HomePage_pic/collection-img-1card.svg">
+                    <div class="collection_card_info">
+                        <h1>DSGN Animals</h1>
+                        <img src="./pic/HomePage_pic/Artist Card.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="collection_tablet">
+                <div class="collection_tablet-item">
+                    <h1 class="collection_tablet-title">Trending Collection</h1>
+                    <p class="collection_tablet-desc">Checkout our weekly updated trending collection.</p>
+                </div>
+                <div class="collection_cards">
+                    <div class="collection_card">
+                        <div class="collection_card_img">
+                            <img class="collection_card_header_img" src="./pic/HomePage_pic/collection-head-img-1card.svg">
+                            <img class="collection_card_images" src="./pic/HomePage_pic/collection-img-1card.svg">
+                        </div>
+                        <div class="collection_card_info">
+                            <h1>DSGN Animals</h1>
+                            <img src="./pic/HomePage_pic/Artist Card.svg">
+                        </div>
+                    </div>
+                    <div class="collection_card">
+                        <div class="collection_card_img">
+                            <img class="collection_card_header_img" src="./pic/HomePage_pic/collection-head-img-2card.svg">
+                            <img class="collection_card_images" src="./pic/HomePage_pic/collection-img-2card.svg">
+                        </div>
+                        <div class="collection_card_info">
+                            <h1>Magic Mushrooms</h1>
+                            <img src="./pic/HomePage_pic/Artist Card.svg">
+                        </div>
+                    </div>
+                    <div class="collection_card">
+                        <div class="collection_card_img">
+                            <img class="collection_card_header_img" src="./pic/HomePage_pic/collection-head-img-3card.svg">
+                            <img class="collection_card_images" src="./pic/HomePage_pic/collection-img-3card.svg">
+                        </div>
+                        <div class="collection_card_info">
+                            <h1>Disco Machines</h1>
+                            <img src="./pic/HomePage_pic/Artist Card.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="creators container">
+            <div class="creators_mobile">
+                <div class="creators-item">
+                    <h1 class="creators-item-title">Top creators</h1>
+                    <p class="creators-item-desc">Checkout Top Rated Creators on the NFT Marketplace</p>
+                </div>
+                <div class="creators_card">
+                    <div class="creators_card_img">
+                        <img src="./pic/HomePage_pic/creator_img-1.svg">
+                        <div class="creators_card_number"><span>1</span></div>
+                    </div>
+                    <div class="creators_about">
+                        <h2 class="creators_name">Keepitreal</h2>
+                        <div class="creators_about_info">
+                            <p>Total Sales:</p>
+                            <span>34.53 ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="creators_card">
+                    <div class="creators_card_img">
+                        <img src="./pic/HomePage_pic/creator_img-2.svg">
+                        <div class="creators_card_number"><span>2</span></div>
+                    </div>
+                    <div class="creators_about">
+                        <h2 class="creators_name">DigiLab</h2>
+                        <div class="creators_about_info">
+                            <p>Total Sales:</p>
+                            <span>34.53 ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="creators_card">
+                    <div class="creators_card_img">
+                        <img src="./pic/HomePage_pic/creator_img-3.svg">
+                        <div class="creators_card_number"><span>3</span></div>
+                    </div>
+                    <div class="creators_about">
+                        <h2 class="creators_name">GravityOne</h2>
+                        <div class="creators_about_info">
+                            <p>Total Sales:</p>
+                            <span>34.53 ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="creators_card">
+                    <div class="creators_card_img">
+                        <img src="./pic/HomePage_pic/creator_img-4.svg">
+                        <div class="creators_card_number"><span>4</span></div>
+                    </div>
+                    <div class="creators_about">
+                        <h2 class="creators_name">Juanie</h2>
+                        <div class="creators_about_info">
+                            <p>Total Sales:</p>
+                            <span>34.53 ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="creators_card">
+                    <div class="creators_card_img">
+                        <img src="./pic/HomePage_pic/creator_img-5.svg">
+                        <div class="creators_card_number"><span>5</span></div>
+                    </div>
+                    <div class="creators_about">
+                        <h2 class="creators_name">BlueWhale</h2>
+                        <div class="creators_about_info">
+                            <p>Total Sales:</p>
+                            <span>34.53 ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="creators_btn">
+                    <img src="./pic/HomePage_pic/RocketLaunch.svg">
+                    <span>View Rankings</span>
+                </button>
+            </div>
+            <div class="creators_tablet">
+                <div class="creators_item">
+                    <div class="creators-item-title">
+                        <h1>Top creators</h1>
+                        <p class="creators-item-desc">Checkout Top Rated Creators on the NFT Marketplace</p>
+                    </div>
+                    <div class="creators_button">
+                        <button class="creators_btn">
+                            <img src="./pic/HomePage_pic/RocketLaunch.svg">
+                            <span>View Rankings</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="creators_cards">
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-1.svg">
+                            <div class="creators_card_number"><span>1</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">Keepitreal</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-2.svg">
+                            <div class="creators_card_number"><span>2</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">DigiLab</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-3.svg">
+                            <div class="creators_card_number"><span>3</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">GravityOne</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-4.svg">
+                            <div class="creators_card_number"><span>4</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">Juanie</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-5.svg">
+                            <div class="creators_card_number"><span>5</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">BlueWhale</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-6.svg">
+                            <div class="creators_card_number"><span>6</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">Mr Fox</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-7.svg">
+                            <div class="creators_card_number"><span>7</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">Shroomie</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-8.svg">
+                            <div class="creators_card_number"><span>8</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">Mr Fox</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-9.svg">
+                            <div class="creators_card_number"><span>9</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">RustyRobot</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-10.svg">
+                            <div class="creators_card_number"><span>10</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">Animakid</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-11.svg">
+                            <div class="creators_card_number"><span>11</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">Dotgu</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creators_card">
+                        <div class="creators_card_img">
+                            <img src="./pic/HomePage_pic/creator_img-1.svg">
+                            <div class="creators_card_number"><span>12</span></div>
+                        </div>
+                        <div class="creators_about">
+                            <h2 class="creators_name">Ghiblier</h2>
+                            <div class="creators_about_info">
+                                <p>Total Sales:</p>
+                                <span>34.53 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <section class="category container">
+            <h1 class="category_title">Categories</h1>
+            <div class="category_cards">
+                <div class="category_card">
+                    <div class="category_card_img">
+                        <img class="category_card_img" src="./pic/HomePage_pic/category-img-1.svg" alt="Art">
+                        <div class="category_card_icon">
+                            <img src="./pic/HomePage_pic/category_PaintBrush.svg">
+                        </div>
+                    </div>
+                    <h3 class="category_card_desc">Art</h3>
+                </div>
+                <div class="category_card">
+                    <div class="category_card_img">
+                        <img class="category_card_img" src="./pic/HomePage_pic/category-img-2.svg" alt="Art">
+                        <div class="category_card_icon">
+                            <img src="./pic/HomePage_pic/Swatches.svg">
+                        </div>
+                    </div>
+                    <h3 class="category_card_desc">Collectibles</h3>
+                </div>
+                <div class="category_card">
+                    <div class="category_card_img">
+                        <img class="category_card_img" src="./pic/HomePage_pic/category-img-3.svg" alt="Art">
+                        <div class="category_card_icon">
+                            <img src="./pic/HomePage_pic/MusicNotes.svg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="category_card_desc">Music</h3>
+                </div>
+                <div class="category_card">
+                    <div class="category_card_img">
+                        <img class="category_card_img" src="./pic/HomePage_pic/category-img-4.svg" alt="Art">
+                        <div class="category_card_icon">
+                            <img src="./pic/HomePage_pic/Camera.svg">
+                        </div>
+                    </div>
+                    <h3 class="category_card_desc">Photography</h3>
+                </div>
+                <div class="category_card">
+                    <div class="category_card_img">
+                        <img class="category_card_img" src="./pic/HomePage_pic/category-img-5.svg" alt="Art">
+                        <div class="category_card_icon">
+                            <img src="./pic/HomePage_pic/VideoCamera.svg">
+                        </div>
+                    </div>
+                    <h3 class="category_card_desc">Video</h3>
+                </div>
+                <div class="category_card">
+                    <div class="category_card_img">
+                        <img class="category_card_img" src="./pic/HomePage_pic/category-img-6.svg" alt="Art">
+                        <div class="category_card_icon">
+                            <img src="./pic/HomePage_pic/MagicWand.svg">
+                        </div>
+                    </div>
+                    <h3 class="category_card_desc">Utility</h3>
+                </div>
+                <div class="category_card">
+                    <div class="category_card_img">
+                        <img class="category_card_img" src="./pic/HomePage_pic/category-img-7.svg" alt="Art">
+                        <div class="category_card_icon">
+                            <img src="./pic/HomePage_pic/Basketball.svg">
+                        </div>
+                    </div>
+                    <h3 class="category_card_desc">Sport</h3>
+                </div>
+                <div class="category_card">
+                    <div class="category_card_img">
+                        <img class="category_card_img" src="./pic/HomePage_pic/category-img-8.svg" alt="Art">
+                        <div class="category_card_icon">
+                            <img src="./pic/HomePage_pic/Planet.svg">
+                        </div>
+                    </div>
+                    <h3 class="category_card_desc">Virtual Worlds</h3>
+                </div>
+            </div>
+        </section>
+        <section class="discover container">
+            <div class="discover_title">
+                <div class="discover_item">
+                    <h1>Discover More NFTs</h1>
+                    <p>Explore new trending NFTs</p>
+                </div>
+                <div class="discover_btn_tablet">
+                    <button>
+                        <i class="fa-regular fa-eye" style="color: #6e3efe;"></i>                        
+                        <span>See All</span>
+                    </button>
+                </div>
+            </div>
+            <div class="discover_cards">
+                <div class="discover_card">
+                    <img class="discover_card_img" src="./pic/HomePage_pic/discover_card-img-1.svg">
+                    <h2 class="discover_card_title">AstroFiction</h2>
+                    <img class="discover_card_user_img" src="./pic/HomePage_pic/discover_card_desc-img-1.svg">
+                    <div class="discover_card_info">
+                        <span>Price</span>
+                        <span>Highest Bid</span>
+                    </div>
+                    <div class="discover_card_rank">
+                        <p>1.63 ETH</p>
+                        <p>0.33 wETH</p>
+                    </div>
+                </div>
+                <div class="discover_card">
+                    <img class="discover_card_img" src="./pic/HomePage_pic/discover_card-img-2.svg">
+                    <h2 class="discover_card_title">Life on Edena</h2>
+                    <img class="discover_card_user_img" src="./pic/HomePage_pic/discover_card_desc-img-2.svg">
+                    
+                    <div class="discover_card_info">
+                        <span>Price</span>
+                        <span>Highest Bid</span>
+                    </div>
+                    <div class="discover_card_rank">
+                        <p>1.63 ETH</p>
+                        <p>0.33 wETH</p>
+                    </div>
+                </div>
+                <div class="discover_card">
+                    <img class="discover_card_img" src="./pic/HomePage_pic/discover_card-img-3.svg">
+                    <h2 class="discover_card_title">AstroFiction</h2>
+                    <img class="discover_card_user_img" src="./pic/HomePage_pic/discover_card_desc-img-3.svg">
+                    <div class="discover_card_info">
+                        <span>Price</span>
+                        <span>Highest Bid</span>
+                    </div>
+                    <div class="discover_card_rank">
+                        <p>1.63 ETH</p>
+                        <p>0.33 wETH</p>
+                    </div>
+                </div>
+            </div>
+            <div class="discover_btn_mobile">
+                <button>
+                    <i class="fa-regular fa-eye" style="color: #6e3efe;"></i>                        
+                    <span>See All</span>
+                </button>
+            </div>
+        </section>
+        <section class="mashroom">
+            <div class="mashroom_all">
+                <div class="mashroom_all_title">
+                    <img class="mashroom_all_avatar" src="./pic/HomePage_pic/mashroom_avatar-img.svg">
+                    <h1 class="mashroom_title">Magic Mashrooms</h1>
+                    <button class="mashroom_btn_tablet">
+                        <i class="fa-regular fa-eye" style="color: #6e3efe;"></i>                        
+                        <span>See NFT</span>
+                    </button>
+                </div>
+                <div class="mashroom_clock">
+                    <div class="mashroom_clock_title">
+                        <p>Auction ends in:</p>
+                    </div>
+                    <div id="clock" class="mashroom_clock_timer"></div>
+                    <div class="mashroom_clock_desc">
+                        <p>Hours</p>
+                        <p>Minutes</p>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+                <button class="mashroom_btn">
+                    <i class="fa-regular fa-eye" style="color: #6e3efe;"></i>                        
+                    <span>See NFT</span>
+                </button>
+            </div>
+
+        </section>
+        <section class="works container">
+            <div class="works_title">
+                <h1>How it works</h1>
+                <p>Find out how to get started</p>
+            </div>
+            <div class="works_cards">
+                <div class="works_card">
+                    <img class="works_card_img" src="./pic/HomePage_pic/works_img.svg">
+                    <div class="works_card_desc">
+                        <h2>Setup Your wallet</h2>
+                        <p>Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner.</p>
+                    </div>
+                </div>
+                <div class="works_card">
+                    <img class="works_card_img" src="./pic/HomePage_pic/works_img.svg">
+                    <div class="works_card_desc">
+                        <h2>Setup Your wallet</h2>
+                        <p>Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner.</p>
+                    </div>
+                </div>
+                <div class="works_card">
+                    <img class="works_card_img" src="./pic/HomePage_pic/works_img.svg">
+                    <div class="works_card_desc">
+                        <h2>Setup Your wallet</h2>
+                        <p>Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="join">
+                <div class="join_card">
+                    <img class="join_card_img" src="./pic/HomePage_pic/join_img.svg">
+                    <div class="join_card_desc">
+                        <h1 class="join_card_desc_item">Join Our Weekly Digest</h1>
+                        <p class="join_card_desc_info">Get exclusive promotions & updates straight to your inbox.</p>
+                        <input class="join_card_desc_input" type="text" placeholder="Enter email address">
+                        <button class="join_card_desc_btn">
+                            <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                            <span>Subscribe</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer container">
+            <div class="footer_about">
+                <img class="footer_logo" src="./pic/HomePage_pic/logo.svg">
+                <div class="footer_about_page">
+                    <h3>NFT marketplace UI created with Anima for Figma.</h3>
+                    <p>Join our community</p>
+                </div>
+                <img src="./pic/HomePage_pic/footer_icons.svg">
+            </div>
+            <div class="footer_navigation">
+                <h1 class="footer_navigations_title">Explore</h1>
+                <ul class="footer_navigation_lists">
+                    <li class="footer_list_items">
+                        <a class="footer_navigation_link" href="#">Marketplace</a>
+                    </li>
+                    <li class="footer_list_items">
+                        <a class="footer_navigation_link" href="#"> Rankings</a>
+                    </li>
+                    <li class="footer_list_items">
+                        <a class="footer_navigation_link" href="#">Connect a wallet</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_auth">
+                <h2 class="footer_auth_title">Join our weekly digest</h2>
+                <p class="footer_auth_desc">Get exclusive promotions & updates straight to your inbox.</p>
+                <input class="footer_auth_input" type="text" placeholder="Enter email address">
+                <button class="footer_auth_btn">
+                    <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                    <span>Subscribe</span>
+                </button>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="./Js/clock.js"></script>
+</body>
+
+</html>

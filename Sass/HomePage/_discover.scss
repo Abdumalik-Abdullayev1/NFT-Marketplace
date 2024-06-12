@@ -1,0 +1,112 @@
+.discover{
+    &_item{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0px;
+    }
+    &_cards{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &_card{
+        width: 100%;
+        background-color: rgba(59, 59, 59, 1);
+        border-radius: 20px;
+        &_title{
+            color: #fff;
+            padding: 20px 20px 10px;
+        }
+        &_img{
+            width: 100%;
+        }
+        &_user_img{
+            padding: 0px 20px;
+        }
+        &_info{
+            font-size: 18px;
+            color: #6f6e6e;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px 0px;
+        }
+        &_rank{
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+    }
+    &_btn_mobile{
+        padding: 30px 0px;
+        button{
+            width: 100%;
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid rgba(162, 89, 255, 1);
+            border-radius: 20px;
+            padding: 20px 50px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+    &_btn_tablet{
+        display: none;
+    }
+}
+@media (min-width: 786px) {
+    .discover{
+        &_title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_cards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &_card{
+            width: 48%;
+        }
+        &_btn_mobile{
+            display: none;
+        }
+        &_btn_tablet{
+            display: block;
+            button{
+                width: 100%;
+                color: #fff;
+                background-color: transparent;
+                border: 2px solid rgba(162, 89, 255, 1);
+                border-radius: 20px;
+                padding: 20px 80px;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;   
+            } 
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .discover{
+        &_title{
+            width: 98%;
+        }
+        &_cards{
+          display: flex;
+          justify-content: center;
+          gap: 30px;  
+        }
+        &_card{
+            width: 31%;
+        }
+    }
+}

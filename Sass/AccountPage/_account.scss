@@ -1,0 +1,86 @@
+.container{
+    width: 90%;
+    margin: 0px auto;
+}
+.account{
+    padding: 100px 0px;
+    &_img{
+        width: 100%;
+    }
+    &_auth{
+        width: 100%;
+        color: #fff;
+        padding: 20px 0px;
+    }
+    &_create{
+        width: 100%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &_username{
+            display: grid;
+            grid-template-columns: 15% 80%;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 15px 0px;
+        }
+        &_email{
+            display: grid;
+            background-color: #fff;
+            border-radius: 20px;
+            grid-template-columns: 15% 80%;
+            padding: 15px 0px;
+        }
+        &_password{
+            display: grid;
+            background-color: #fff;
+            border-radius: 20px;
+            grid-template-columns: 15% 80%;
+            padding: 15px 0px;
+        }
+        &_btn{
+            height: 60px;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+            border: none;
+            background-color: rgba(162, 89, 255, 1);
+        }
+        i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .username{
+            width: 100%;
+            font-size: 18px;
+            outline: none;
+            border: none;
+        }
+        .email{
+            width: 100%;
+            font-size: 18px;
+            outline: none;
+            border: none;
+        }
+        .password{
+            width: 100%;
+            font-size: 18px;
+            outline: none;
+            border: none;
+        }
+    }
+}
+@media (min-width: 786px){
+    .account{
+        display: grid;
+        grid-template-columns: 60% auto;
+        align-items: center;
+        gap: 40px;
+        &_img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

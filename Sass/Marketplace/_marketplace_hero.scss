@@ -1,0 +1,113 @@
+.marketplace{
+    &_title{
+        color: #fff;
+        font-size: 28px;
+        margin-top: 100px;
+    }
+    &_desc{
+        color: #fff;
+        font-size: 18px;
+        padding: 15px 0px 40px;
+    }
+    &_input{
+        height: 60px;
+        border: 2px solid #807e7e;
+        padding: 5px 20px;
+        border-radius: 20px;
+        font-size: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input{
+            width: 80%;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 18px;
+        }
+    }
+    &_recommend{
+        background-color: rgba(59, 59, 59, 1);
+    }
+    &_lists{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        padding-top: 30px;
+        a{
+            color: rgba(133, 133, 132, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 20px;
+        }
+        a:hover{
+            height: 200%;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            transition: all 0.8s;
+        }
+    }
+    &_cards{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 0;
+        &_card{
+            background-color: rgba(43, 43, 43, 1);
+            border-radius: 35px 35px 20px 20px;
+            &:nth-child(6),&:nth-child(7),&:nth-child(8),&:nth-child(9),&:nth-child(10),&:nth-child(11),&:nth-child(12){
+                display: none;
+            }
+        }
+        &_img{
+            width: 100%;
+        }
+        &_desc{
+            color: #fff;
+            line-height: 45px;
+            padding: 10px 20px;
+        }
+        &_info{
+            font-size: 18px;
+            color: #6f6e6e;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 20px;
+        }
+        &_rank{
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+    }
+}
+@media (min-width: 786px){
+    .marketplace{
+        &_cards{
+            display: grid;
+            grid-template-columns: auto auto;
+            &_card{
+                &:nth-child(6),&:nth-child(7),&:nth-child(8){
+                    display: block;
+                }      
+            }
+        }   
+    }
+}
+@media (min-width: 1200px) {
+    .marketplace{
+        &_cards{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            &_card{
+                &:nth-child(9),&:nth-child(10),&:nth-child(11),&:nth-child(12){
+                    display: block;
+                }      
+            }
+        }
+    }
+}

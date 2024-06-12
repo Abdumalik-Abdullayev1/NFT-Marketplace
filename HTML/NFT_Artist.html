@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>NFT Page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html"><img class="nav_logo" src="../pic/HomePage_pic/logo.svg" alt="Logo"></a>
+            <div class="nav_links">
+                <ul class="nav_lists">
+                    <li class="list_items">
+                        <a class="list_link" href="./ArtistPage.html">Artist</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="./Marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="./NFT_Artist.html">NFT Page</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="#">Connect a wallet</a>
+                    </li>
+                    <a href="./AccountPage.html"><button class="nav_items_auth"><i class="fa-solid fa-user" style="color: #ffffff;"></i><span>Sign Up</span></button></a>    
+                </ul>
+            </div>
+            <button id="nav_burger" onclick="btn()">
+                <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
+            </button>
+        </nav>
+    </header>
+    <section class="orbitains">
+        <div class="orbitains_img"></div>
+        <div class="orbitains_title container">
+            <div class="orbitains_title_item">
+                <h1>The Orbitians</h1>
+                <p class="orbitains_title_desc">Minted on Sep 30, 2022</p>
+            </div>
+            <div class="orbitains_clock">
+                <p class="orbitains_clock_item">Auction ends in:</p>
+                <div id="clock"></div>
+                <div class="orbitains_clock_info">
+                    <span>Hours</span>
+                    <span>Minutes</span>
+                    <span>Seconds</span>
+                </div>
+                <button class="orbitains_clock_btn">Place Bid</button>
+            </div>
+            <div class="orbitains_title_info">
+                <p>Created By</p>
+                <img src="../pic/NFT_artist_Pic/orbitains_avatar.svg">
+            </div>
+        </div>
+
+            <div class="orbitains_description container">
+                <h4 class="orbitains_description_title">Description</h4>
+                <p>The Orbitians is a collection of 10,000 unique NFTs on the Ethereum blockchain,</p>
+                <p>There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians.</p>
+                <p>They live in a metal space machines, high up in the sky and only have one foot on Earth.
+                    These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.</p>
+                    <div class="orbitains_details">
+                        <h4>Details</h4>
+                        <p><i class="fa-solid fa-globe"></i> View on Etherscan</p>
+                        <p><i class="fa-solid fa-globe"></i> View Original</p>
+                    </div>
+                    <div class="orbitains_tags">
+                        <h4>Tags</h4>
+                        <div class="orbitains_tags_tag">
+                            <span>Animation</span>
+                        </div>
+                        <div class="orbitains_tags_tag">
+                            <span>Illustration</span>
+                        </div>
+                        <div class="orbitains_tags_tag">
+                            <span>Moon</span>
+                        </div>
+                        <div class="orbitains_tags_tag">
+                            <span>Moon</span>
+                        </div>
+                    </div>
+            </div>
+    </section>
+    <section class="nft_artist container">
+        <div class="nft_artist_title">
+            <h1>More from this artist</h1>
+        </div>
+        <div class="nft_artist_cards">
+            <div class="nft_artist_cards_card">
+                <img class="nft_artist_cards_card_img" src="../pic/NFT_artist_Pic/nft_artist_img-1.svg">
+                <div class="nft_artist_cards_card_title">
+                    <h2>Designer Bear</h2>
+                    <img src="../pic/NFT_artist_Pic/orbitains_avatar.svg">
+                </div>
+                <div class="nft_artist_cards_card_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="nft_artist_cards_card_rank">
+                    <span>1.63 ETH</span>
+                    <span>0.33 wETH</span>
+                </div>
+            </div>
+            <div class="nft_artist_cards_card">
+                <img class="nft_artist_cards_card_img" src="../pic/NFT_artist_Pic/nft_artist_img-2.svg">
+                <div class="nft_artist_cards_card_title">
+                    <h2>Designer Bear</h2>
+                    <img src="../pic/NFT_artist_Pic/orbitains_avatar.svg">
+                </div>
+                <div class="nft_artist_cards_card_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="nft_artist_cards_card_rank">
+                    <span>1.63 ETH</span>
+                    <span>0.33 wETH</span>
+                </div>
+            </div>
+            <div class="nft_artist_cards_card">
+                <img class="nft_artist_cards_card_img" src="../pic/NFT_artist_Pic/nft_artist_img-3.svg">
+                <div class="nft_artist_cards_card_title">
+                    <h2>Designer Bear</h2>
+                    <img src="../pic/NFT_artist_Pic/orbitains_avatar.svg">
+                </div>
+                <div class="nft_artist_cards_card_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="nft_artist_cards_card_rank">
+                    <span>1.63 ETH</span>
+                    <span>0.33 wETH</span>
+                </div>
+            </div>
+            <div class="nft_artist_cards_card">
+                <img class="nft_artist_cards_card_img" src="../pic/NFT_artist_Pic/nft_artist_img-4.svg">
+                <div class="nft_artist_cards_card_title">
+                    <h2>Designer Bear</h2>
+                    <img src="../pic/NFT_artist_Pic/orbitains_avatar.svg">
+                </div>
+                <div class="nft_artist_cards_card_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="nft_artist_cards_card_rank">
+                    <span>1.63 ETH</span>
+                    <span>0.33 wETH</span>
+                </div>
+            </div>
+            <div class="nft_artist_cards_card">
+                <img class="nft_artist_cards_card_img" src="../pic/NFT_artist_Pic/nft_artist_img-5.svg">
+                <div class="nft_artist_cards_card_title">
+                    <h2>Designer Bear</h2>
+                    <img src="../pic/NFT_artist_Pic/orbitains_avatar.svg">
+                </div>
+                <div class="nft_artist_cards_card_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="nft_artist_cards_card_rank">
+                    <span>1.63 ETH</span>
+                    <span>0.33 wETH</span>
+                </div>
+            </div>
+            <div class="nft_artist_cards_card">
+                <img class="nft_artist_cards_card_img" src="../pic/NFT_artist_Pic/nft_artist_img-6.svg">
+                <div class="nft_artist_cards_card_title">
+                    <h2>Designer Bear</h2>
+                    <img src="../pic/NFT_artist_Pic/orbitains_avatar.svg">
+                </div>
+                <div class="nft_artist_cards_card_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="nft_artist_cards_card_rank">
+                    <span>1.63 ETH</span>
+                    <span>0.33 wETH</span>
+                </div>
+            </div>
+            <div class="nft_artist_cards_card">
+                <img class="nft_artist_cards_card_img" src="../pic/NFT_artist_Pic/nft_artist_img-7.svg">
+                <div class="nft_artist_cards_card_title">
+                    <h2>Designer Bear</h2>
+                    <img src="../pic/NFT_artist_Pic/orbitains_avatar.svg">
+                </div>
+                <div class="nft_artist_cards_card_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="nft_artist_cards_card_rank">
+                    <span>1.63 ETH</span>
+                    <span>0.33 wETH</span>
+                </div>
+            </div>
+            <div class="nft_artist_cards_card">
+                <img class="nft_artist_cards_card_img" src="../pic/NFT_artist_Pic/nft_artist_img-8.svg">
+                <div class="nft_artist_cards_card_title">
+                    <h2>Designer Bear</h2>
+                    <img src="../pic/NFT_artist_Pic/orbitains_avatar.svg">
+                </div>
+                <div class="nft_artist_cards_card_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="nft_artist_cards_card_rank">
+                    <span>1.63 ETH</span>
+                    <span>0.33 wETH</span>
+                </div>
+            </div>
+            <div class="nft_artist_cards_card">
+                <img class="nft_artist_cards_card_img" src="../pic/NFT_artist_Pic/nft_artist_img-9.svg">
+                <div class="nft_artist_cards_card_title">
+                    <h2>Designer Bear</h2>
+                    <img src="../pic/NFT_artist_Pic/orbitains_avatar.svg">
+                </div>
+                <div class="nft_artist_cards_card_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="nft_artist_cards_card_rank">
+                    <span>1.63 ETH</span>
+                    <span>0.33 wETH</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer container">
+        <div class="footer_about">
+            <img class="footer_logo" src="../pic/HomePage_pic/logo.svg">
+            <div class="footer_about_page">
+                <h3>NFT marketplace UI created with Anima for Figma.</h3>
+                <p>Join our community</p>
+            </div>
+            <img src="../pic/HomePage_pic/footer_icons.svg">
+        </div>
+        <div class="footer_navigation">
+            <h1 class="footer_navigations_title">Explore</h1>
+            <ul class="footer_navigation_lists">
+                <li class="footer_list_items">
+                    <a class="footer_navigation_link" href="#">Marketplace</a>
+                </li>
+                <li class="footer_list_items">
+                    <a class="footer_navigation_link" href="#"> Rankings</a>
+                </li>
+                <li class="footer_list_items">
+                    <a class="footer_navigation_link" href="#">Connect a wallet</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_auth">
+            <h2 class="footer_auth_title">Join our weekly digest</h2>
+            <p class="footer_auth_desc">Get exclusive promotions & updates straight to your inbox.</p>
+            <input class="footer_auth_input" type="text" placeholder="Enter email address">
+            <button class="footer_auth_btn">
+                <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                <span>Subscribe</span>
+            </button>
+        </div>
+    </footer>
+
+    <script src="../Js/clock.js"></script>
+</body>
+</html>

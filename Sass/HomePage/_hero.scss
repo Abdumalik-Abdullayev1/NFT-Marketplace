@@ -1,0 +1,145 @@
+.container{
+    width: 90%;
+    margin: 30px  auto;
+}
+.hero{
+    &_mobile{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 15px;
+        &-title{
+            width: 100%;
+            color: #fff;
+            font-size: 28px;
+            line-height: 39px;
+        }
+        &-desc{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+
+    }   
+    .hero_card{
+        width: 100%;
+        background-color: rgba(59, 59, 59, 1);
+        border-radius: 20px;
+        &-img{
+            width: 100%;
+        }
+        &-desc{
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .hero_info{
+            display: flex;
+            gap: 12px;
+        }
+    }
+    .hero_mobile-btn{
+        width: 100%;
+        padding: 19px 0px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        background-color: rgba(162, 89, 255, 1);
+    }
+    .hero_statistic{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        &-item{
+            color: #fff;
+        }
+        &-title{
+            font-size: 25px;
+            line-height: 35px;
+        }
+        &-text{
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    .hero_tablet{
+        display: none;
+    }
+}
+@media (min-width: 786px) {
+    .hero{
+        .hero_tablet{
+            display: block;
+            margin-top: 120px;
+        }
+        &_mobile{
+            display: none;
+        }
+        &_tablet_card{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_tablet_left{
+            width: 40%;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1{
+                width: 100%;
+                font-size: 35px;
+                line-height: 45px;
+            }
+            p{
+                width: 100%;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+        .hero_tablet_button{
+            width: 80%;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 20px;
+            background-color: rgba(162, 89, 255, 1);
+            color: #fff;
+            font-size: 18px;
+        }
+        .hero_tablet_right_info{
+            width: 50%;
+            background-color: rgba(59, 59, 59, 1);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            border-radius: 24px;
+            gap: 15px;
+        }
+        .hero_info{
+            display: flex;
+            gap: 12px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .hero{
+        &_tablet_left{
+            h1{
+                font-size: 67px;
+                line-height: 73px;
+            }
+            p{
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+    }
+}

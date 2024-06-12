@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html"><img class="nav_logo" src="../pic/HomePage_pic/logo.svg"></a>
+            <div class="nav_links">
+                <ul class="nav_lists">
+                    <li class="list_items">
+                        <a class="list_link" href="./ArtistPage.html">Artist</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="./Marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="./NFT_Artist.html">NFT Page</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="#">Connect a wallet</a>
+                    </li>
+                    <a href="./AccountPage.html"><button class="nav_items_auth"><i class="fa-solid fa-user" style="color: #ffffff;"></i><span>Sign Up</span></button></a>    
+                </ul>
+            </div>
+            <button id="nav_burger" onclick="btn()"><i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i></button>
+        </nav>
+    </header>
+    <main>
+        <section class="account container">
+            <img class="account_img" src="../pic/Account_pic/account_img.svg">
+            <div class="account_create">
+                <div class="account_auth">
+                    <h1 class="account_auth_title">Create account</h1>
+                    <p class="account_auth_desc">Welcome! enter your details and start creating, collecting and selling NFTs.</p>
+                </div>
+                <div class="account_create_username">
+                    <i class="fa-regular fa-user"></i>
+                    <input class="username" type="text" placeholder="Username">
+                </div>
+                <div class="account_create_email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input class="email" type="email" placeholder="Email Address">
+                </div>
+                <div class="account_create_password">
+                    <i class="fa-sharp fa-solid fa-lock"></i>
+                    <input class="password" type="password" placeholder="Password">
+                </div>
+                <div class="account_create_password">
+                    <i class="fa-sharp fa-solid fa-lock"></i>
+                    <input class="password" type="password" placeholder="Confrim Password">
+                </div>
+                <button class="account_create_btn">Create account</button>
+            </div>
+        </section>
+        <footer class="footer container">
+            <div class="footer_about">
+                <img class="footer_logo" src="../pic/HomePage_pic/logo.svg">
+                <div class="footer_about_page">
+                    <h3>NFT marketplace UI created with Anima for Figma.</h3>
+                    <p>Join our community</p>
+                </div>
+                <img src="../pic/HomePage_pic/footer_icons.svg">
+            </div>
+            <div class="footer_navigation">
+                <h1 class="footer_navigations_title">Explore</h1>
+                <ul class="footer_navigation_lists">
+                    <li class="footer_list_items">
+                        <a class="footer_navigation_link" href="#">Marketplace</a>
+                    </li>
+                    <li class="footer_list_items">
+                        <a class="footer_navigation_link" href="#"> Rankings</a>
+                    </li>
+                    <li class="footer_list_items">
+                        <a class="footer_navigation_link" href="#">Connect a wallet</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_auth">
+                <h2 class="footer_auth_title">Join our weekly digest</h2>
+                <p class="footer_auth_desc">Get exclusive promotions & updates straight to your inbox.</p>
+                <input class="footer_auth_input" type="text" placeholder="Enter email address">
+                <button class="footer_auth_btn">
+                    <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                    <span>Subscribe</span>
+                </button>
+            </div>
+        </footer>
+    </main>
+
+    <script src="../Js/clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Artist page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html"><img class="nav_logo" src="../pic/HomePage_pic/logo.svg"></a>
+            <div class="nav_links">
+                <ul class="nav_lists">
+                    <li class="list_items">
+                        <a class="list_link" href="./ArtistPage.html">Artist</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="./Marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="./NFT_Artist.html">NFT Page</a>
+                    </li>
+                    <li class="list_items">
+                        <a class="list_link" href="#">Connect a wallet</a>
+                    </li>
+                    <a href="./AccountPage.html"><button class="nav_items_auth"><i class="fa-solid fa-user" style="color: #ffffff;"></i><span>Sign Up</span></button></a>    
+                </ul>
+            </div>
+            <button id="nav_burger" onclick="btn()">
+                <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
+            </button>
+        </nav>
+    </header>
+    <section class="animakid">
+        <div class="animakid_img">
+            <img class="animakid_img_avatar" src="../pic/artist_pic/artist_page-Avatar.svg">
+        </div>
+        <div class="animakid_desc container">
+            <div class="animakid_title">
+                <h1>Animakid</h1>
+                <div class="animakid_btns">
+                    <button class="animakid_btns_copy">
+                        <i class="fa-regular fa-clone"></i>
+                        <span>0xc0E3...B79C</span>
+                    </button>
+                    <button class="animakid_btns_follow">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Follow</span>
+                    </button>
+                </div>
+            </div>
+            <div class="animakid_rank">
+                <div>
+                    <h2>250k+</h2>
+                    <p>Volume</p>
+                </div>
+                <div>
+                    <h2>50k+</h2>
+                    <p>NFTs Sold</p>
+                </div>
+                <div>
+                    <h2>3000+</h2>
+                    <p>Followres</p>
+                </div>
+            </div>
+            <div class="animakid_bio">
+                <span>Bio</span>
+                <p class="animakid_bio_desc">The internet's friendliest designer kid.</p>
+            </div>
+            <div class="animakid_link">
+                <p>Links</p>
+                <img class="animakid_link_icon" src="../pic/HomePage_pic/footer_icons.svg">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="created container">
+        <div class="created_lists">
+            <a href="#">Created  <span class="notifications">302</span></a>
+            <a href="#">Owned <span class="notifications">67</span></a>
+            <a href="#">Collection <span class="notifications">4</span></a>
+        </div>
+        <div class="created_cards">
+            <div class="created_cards_card">
+                <img class="created_cards_img" src="../pic/artist_pic/discover_card_img-1.svg">
+                <div class="created_cards_desc">
+                    <h2>Distant Galaxy</h2>
+                    <img src="../pic/artist_pic/discover_card_desc_img-1.svg">
+                </div>
+                <div class="created_cards_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="created_cards_rank">
+                    <p>1.63 ETH</p>
+                    <p>0.33 wETH</p>
+                </div>
+            </div>
+            <div class="created_cards_card">
+                <img class="created_cards_img" src="../pic/artist_pic/discover_card_img-2.svg">
+                <div class="created_cards_desc">
+                    <h2>Life On Edene</h2>
+                    <img src="../pic/artist_pic/discover_card_desc_img-1.svg">
+                </div>
+                <div class="created_cards_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="created_cards_rank">
+                    <p>1.63 ETH</p>
+                    <p>0.33 wETH</p>
+                </div>
+            </div>
+            <div class="created_cards_card">
+                <img class="created_cards_img" src="../pic/artist_pic/discover_card_img-3.svg">
+                <div class="created_cards_desc">
+                    <h2>AstroFiction</h2>
+                    <img src="../pic/artist_pic/discover_card_desc_img-1.svg">
+                </div>
+                <div class="created_cards_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="created_cards_rank">
+                    <p>1.63 ETH</p>
+                    <p>0.33 wETH</p>
+                </div>
+            </div>
+            <div class="created_cards_card">
+                <img class="created_cards_img" src="../pic/artist_pic/discover_card_img-4.svg">
+                <div class="created_cards_desc">
+                    <h2>CryptoCity</h2>
+                    <img src="../pic/artist_pic/discover_card_desc_img-1.svg">
+                </div>
+                <div class="created_cards_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="created_cards_rank">
+                    <p>1.63 ETH</p>
+                    <p>0.33 wETH</p>
+                </div>
+            </div>
+            <div class="created_cards_card">
+                <img class="created_cards_img" src="../pic/artist_pic/discover_card_img-5.svg">
+                <div class="created_cards_desc">
+                    <h2>ColorfulDog 0524</h2>
+                    <img src="../pic/artist_pic/discover_card_desc_img-1.svg">
+                </div>
+                <div class="created_cards_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="created_cards_rank">
+                    <p>1.63 ETH</p>
+                    <p>0.33 wETH</p>
+                </div>
+            </div>
+            <div class="created_cards_card">
+                <img class="created_cards_img" src="../pic/artist_pic/discover_card_img-6.svg">
+                <div class="created_cards_desc">
+                    <h2>Space Tales</h2>
+                    <img src="../pic/artist_pic/discover_card_desc_img-1.svg">
+                </div>
+                <div class="created_cards_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="created_cards_rank">
+                    <p>1.63 ETH</p>
+                    <p>0.33 wETH</p>
+                </div>
+            </div>
+            <div class="created_cards_card">
+                <img class="created_cards_img" src="../pic/artist_pic/discover_card_img-7.svg">
+                <div class="created_cards_desc">
+                    <h2>Space Tales</h2>
+                    <img src="../pic/artist_pic/discover_card_desc_img-1.svg">
+                </div>
+                <div class="created_cards_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="created_cards_rank">
+                    <p>1.63 ETH</p>
+                    <p>0.33 wETH</p>
+                </div>
+            </div>
+            <div class="created_cards_card">
+                <img class="created_cards_img" src="../pic/artist_pic/discover_card_img-8.svg">
+                <div class="created_cards_desc">
+                    <h2>Space Tales</h2>
+                    <img src="../pic/artist_pic/discover_card_desc_img-1.svg">
+                </div>
+                <div class="created_cards_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="created_cards_rank">
+                    <p>1.63 ETH</p>
+                    <p>0.33 wETH</p>
+                </div>
+            </div>
+            <div class="created_cards_card">
+                <img class="created_cards_img" src="../pic/artist_pic/discover_card_img-9.svg">
+                <div class="created_cards_desc">
+                    <h2>Space Tales</h2>
+                    <img src="../pic/artist_pic/discover_card_desc_img-1.svg">
+                </div>
+                <div class="created_cards_info">
+                    <span>Price</span>
+                    <span>Highest Bid</span>
+                </div>
+                <div class="created_cards_rank">
+                    <p>1.63 ETH</p>
+                    <p>0.33 wETH</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer container">
+        <div class="footer_about">
+            <img class="footer_logo" src="../pic/HomePage_pic/logo.svg">
+            <div class="footer_about_page">
+                <h3>NFT marketplace UI created with Anima for Figma.</h3>
+                <p>Join our community</p>
+            </div>
+            <img src="../pic/HomePage_pic/footer_icons.svg">
+        </div>
+        <div class="footer_navigation">
+            <h1 class="footer_navigations_title">Explore</h1>
+            <ul class="footer_navigation_lists">
+                <li class="footer_list_items">
+                    <a class="footer_navigation_link" href="#">Marketplace</a>
+                </li>
+                <li class="footer_list_items">
+                    <a class="footer_navigation_link" href="#"> Rankings</a>
+                </li>
+                <li class="footer_list_items">
+                    <a class="footer_navigation_link" href="#">Connect a wallet</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_auth">
+            <h2 class="footer_auth_title">Join our weekly digest</h2>
+            <p class="footer_auth_desc">Get exclusive promotions & updates straight to your inbox.</p>
+            <input class="footer_auth_input" type="text" placeholder="Enter email address">
+            <button class="footer_auth_btn">
+                <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                <span>Subscribe</span>
+            </button>
+        </div>
+    </footer>
+
+    <script src="../Js/clock.js"></script>
+</body>
+</html>
